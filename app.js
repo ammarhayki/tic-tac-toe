@@ -4,7 +4,7 @@
 
 /*------------------------- Variables (state) ----------------------------*/
 let currentPlayer = 'X'
-
+let isGameOver = false
 
 
 
@@ -24,6 +24,13 @@ const sqr8El = document.getElementById('8')
 
 /*----------------------- Functions --------------------------------*/
  messageEl.textContent = `It's ${currentPlayer}'s turn`
+// // change current player 
+if(currentPlayer === 'X'){
+    currentPlayer = 'O'
+
+}else{
+currentPlayer = 'X'
+}
 
 // const handleClick = (event) => {
 //     if(currentPlayer === 'X'){
@@ -40,30 +47,131 @@ const sqr8El = document.getElementById('8')
 /*---------------------- Event Listeners -----------------------------*/
 // squaresEl.addEventListner('click'. handleClick)
 sqr0El.addEventListener('click', ()=>{
+    if (sqr0El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr0El.textContent = currentPlayer
+    
+    
 })
 sqr1El.addEventListener('click', ()=>{
+    if (sqr1El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr1El.textContent = currentPlayer
 })
 sqr2El.addEventListener('click', ()=>{
+    if (sqr2El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr2El.textContent = currentPlayer
 })
 sqr3El.addEventListener('click', ()=>{
+    if (sqr3El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr3El.textContent = currentPlayer
 })
 sqr4El.addEventListener('click', ()=>{
+    if (sqr4El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr4El.textContent = currentPlayer
 })
 sqr5El.addEventListener('click', ()=>{
+    if (sqr5El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr5El.textContent = currentPlayer
 })
 sqr6El.addEventListener('click', ()=>{
+    if (sqr6El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr6El.textContent = currentPlayer
 })
 sqr7El.addEventListener('click', ()=>{
+    if (sqr7El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr7El.textContent = currentPlayer
 })
 sqr8El.addEventListener('click', ()=>{
+    if (sqr8El.textContent !== '' || isGameOver === true){
+        return
+    }else{
+        if(currentPlayer === 'X'){
+            currentPlayer = 'O'
+        }else{
+            currentPlayer = 'X'
+        }
+        messageEl.textContent = `It's ${currentPlayer}'s turn`        
+    }
+
     sqr8El.textContent = currentPlayer
 })
 
